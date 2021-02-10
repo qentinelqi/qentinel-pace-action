@@ -1,0 +1,24 @@
+{
+  "name": "qentinel-pace-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qentinelqi/qentinel-pace-action.git"
+  },
+  "keywords": [],
+  "author": "Jarno Lintusaari",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/qentinelqi/qentinel-pace-action/issues"
+  },
+  "homepage": "https://github.com/qentinelqi/qentinel-pace-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "axios": "^0.21.1"
+  }
+}

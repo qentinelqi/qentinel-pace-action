@@ -1,0 +1,49 @@
+name: 'Qentinel Pace'
+description: 'Run a test suite in Qentinel Pace'
+inputs:
+  access_token:
+    description: 'Pace access token'
+    required: true
+  project_id:
+    description: 'Id of the project containing the suite'
+    required: true
+  suite_id:
+    description: 'Id of the suite to run'
+    required: true
+  wait_result:
+    description: 'Wait for the run to finish. Default is "true".'
+    required: false
+    default: 'true'
+  ignore_failed:
+    description: 'Pass the step even if the run failed. Default is "false".'
+    required: false
+    default: 'false'
+  branch:
+    description: 'Which branch to run the tests from'
+    required: false
+  record:
+    description: 'Record the run'
+    required: false
+  run_type:
+    description: 'Type of the run'
+    required: false
+  tag:
+    description: 'Tag for the branch to run the tests from'
+    required: false
+  api_url:
+    description: 'Alternative url for the API for development purposes'
+    required: false
+
+outputs:
+  build_id:
+    description: 'The buildId of the run'
+  result:
+    description: 'The result of the test suite run'
+  duration:
+    description: 'The execution time in seconds'
+  link:
+    description: 'Link to the results'
+
+runs:
+  using: 'node12'
+  main: 'index.js'
