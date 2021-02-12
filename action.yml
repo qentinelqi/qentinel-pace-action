@@ -1,5 +1,8 @@
 name: 'Qentinel Pace'
 description: 'Run a test suite in Qentinel Pace'
+branding:
+  icon: 'check-circle'
+  color: 'orange'
 inputs:
   access_token:
     description: 'Pace access token'
