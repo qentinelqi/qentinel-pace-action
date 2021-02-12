@@ -5,12 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Run a test suite in Pace
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Run a test suite
-        uses: ./ # Uses an action in the root directory
+        uses: qentinelqi/qentinel-pace-action@1.0.0
         id: test_suite
         with:
           access_token: ${{ secrets.PACE_ACCESS_TOKEN }}
