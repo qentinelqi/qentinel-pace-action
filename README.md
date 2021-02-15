@@ -1,6 +1,6 @@
 # Qentinel Pace Action
 
-This actions runs a test suite in [Qentinel Pace](https://pace.qentinel.com) and
+This action runs a test suite in [Qentinel Pace](https://pace.qentinel.com) and
 validates that it passes.
 
 
@@ -18,14 +18,23 @@ Then navigate to a test suite in Pace. Extract the `project_id` and the
 Then in your GitHub workflow `.yaml` file:
 
 ```yaml
-uses: qentinelqi/qentinel-pace-action@1.0.1
+uses: qentinelqi/qentinel-pace-action@1.0.2
 with:
   access_token: ${{ secrets.<NAME_OF_YOUR_SECRET> }}
   suite_id: <id_of_your_suite>
   project_id: <id_of_your_project>
 ```
 
-The following optional variables can be added to the `with` section above:
+That is all that is needed. For a concrete example, please see the `main.yml`
+file
+[in this repository](https://github.com/qentinelqi/qentinel-pace-action/blob/main/.github/workflows/main.yml). For general instructions on how to use GitHub
+actions, see [here](https://docs.github.com/en/actions/learn-github-actions).
+
+
+### Additional settings
+
+The following optional variables can be added to the `with` section to configure
+the action:
 
 ```yaml
 with:
@@ -54,6 +63,8 @@ The following output variables will be set
 
 
 # Development
+
+These instructions are for developing this action.
 
 [GitHub instructions](https://docs.github.com/en/actions/creating-actions).
 

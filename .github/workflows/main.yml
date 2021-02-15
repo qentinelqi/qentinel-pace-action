@@ -6,19 +6,9 @@ jobs:
     name: Run a test suite in Pace
     steps:
       - name: Run a test suite
-        uses: qentinelqi/qentinel-pace-action@1.0.0
+        uses: qentinelqi/qentinel-pace-action@1.0.1
         id: test_suite
         with:
           access_token: ${{ secrets.PACE_ACCESS_TOKEN }}
           suite_id: 8313
           project_id: 9444
-
-          # Options to control step execution
-          # wait_result: "true"
-          # ignore_failed: "false"
-
-          # Options for the run
-          # branch: "branch"
-          # record: "all"
-          # runType: "dry"
-          # tag: "tag"
